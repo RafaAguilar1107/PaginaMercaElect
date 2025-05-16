@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Estudio de Mercado Gomar</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/components.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="/pages/clientes.html">Clientes</a></li>
+            <li class="has-submenu">
+                <a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="/pages/inv_mercado.html">Estudio de mercado</a></li>
+                    <li><a href="/pages/analisis_datos.html">Análisis de datos</a></li>
+                    <li><a href="/pages/consultoria_estrategica.html">Consultoría estratégica</a></li>
+                </ul>
+            </li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 style="color: white;">Contáctanos</h1>
+    </header>
+    <main>
+        <section id="contacto">
+
+            <p>Visítanos en nuestra oficina o contáctanos a través del formulario.</p>
+                <form action="submit_form.php" method="post" class="form-grid">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Nombre*" required>
+                        <input type="text" name="apellido" placeholder="Apellido*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="eMail*" required>
+                        <input type="tel" name="telefono" placeholder="Teléfono*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="pais" placeholder="País*" required>
+                        <input type="text" name="empresa" placeholder="Empresa*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="como_nos_conociste" required>
+                            <option value="">¿Cómo nos conociste?*</option>
+                            <option value="google">Google</option>
+                            <option value="redes">Redes Sociales</option>
+                            <option value="recomendacion">Recomendación</option>
+                        </select>
+                        <select name="tema_interes" required>
+                            <option value="">¿Qué tema o servicio te interesa?*</option>
+                            <option value="estudio">Estudio de mercado</option>
+                            <option value="analisis">Análisis de datos</option>
+                        </select>
+                        <select name="rol" required>
+                            <option value="">Rol</option>
+                            <option value="cliente">Cliente</option>
+                            <option value="investigador">Investigador</option>
+                        </select>
+                    </div>
+
+                    <textarea name="mensaje" rows="4" placeholder="Escríbenos aquí tu mensaje o consulta*"
+                        required></textarea>
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="acepto" required>
+                        Acepto que Olivia se ponga en contacto conmigo
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                    <br>
+
+                    <div id="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.0413876738832!2d-100.81835726107003!3d20.540406232013037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabe1464902d%3A0xb2632abb6485fb0d!2sFray%20Diego%20de%20Besalenque%20117%2C%20Fovissste%2C%2038010%20Celaya%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1746741597591!5m2!1ses-419!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="eager"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+
+</html>

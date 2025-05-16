@@ -1,0 +1,17 @@
+{
+  "name": "mi-sitio-web",
+  "version": "1.0.0",
+  "description": "Un sitio web básico",
+  "main": "src/assets/js/main.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Construcción del proyecto...'",
+    "test": "echo 'Ejecutando pruebas...'"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

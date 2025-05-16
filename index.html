@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strato Market</title>
+
+    <!-- Precarga de componentes y recursos críticos -->
+    <link rel="preload" href="components/footer.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="/assets/images/hero-image.jpg" as="image">
+    <link rel="preload" href="/assets/images/logo.png" as="image">
+
+    <!-- Estilos y scripts -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/components.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="/pages/clientes.html">Clientes</a></li>
+            <li class="has-submenu">
+                <a href="pages/servicios.html">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="pages/inv_mercado.html">Estudio de mercado</a></li>
+                    <li><a href="pages/analisis_datos.html">Análisis de datos</a></li>
+                    <li><a href="pages/consultoria_estrategica.html">Consultoría estratégica</a></li>
+                </ul>
+            </li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botón para abrir el menú completo -->
+    <button id="open-full-menu" class="open-menu-btn">☰</button>
+
+    <!-- Contenedor para el menú completo -->
+    <div id="full-menu" class="full-menu hidden">
+        <button id="close-full-menu" class="close-menu-btn">✖</button>
+        <ul class="full-menu-list">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="/pages/inv_mercado.html">Estudio de mercado</a></li>
+            <li><a href="/pages/analisis_datos.html">Análisis de datos</a></li>
+            <li><a href="/pages/consultoría_estrategica.html">Consultoría estratégica</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1 style="color: white; font-size: 3.5rem;">Strato Market</h1>
+        <p>Decisiones inteligentes basadas en datos.</p>
+    </header>
+    <main>
+        
+
+        <section class="servicios-preview">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-preview-grid">
+                <div class="servicio-mini">
+                    <i>📊</i>
+                    <h3>Análisis de Datos</h3>
+                    <p>Transformamos datos complejos en decisiones inteligentes para tu negocio.</p>
+                </div>
+                <div class="servicio-mini">
+                    <i>🎯</i>
+                    <h3>Investigación de Mercado</h3>
+                    <p>Conoce a tu mercado y a tu competencia para tomar mejores decisiones.</p>
+                </div>
+                <div class="servicio-mini">
+                    <i>💡</i>
+                    <h3>Consultoría Estratégica</h3>
+                    <p>Optimizamos tu negocio con estrategias basadas en datos reales.</p>
+                </div>
+            </div>
+            <a href="pages/servicios.html" class="btn btn-lg">Explora Nuestros Servicios</a>
+        </section>
+
+        <section class="compromiso-section">
+            <h2 style="color: white;" class="compromiso-titulo">Nuestro Compromiso Contigo</h2>
+            <div class="compromiso-grid">
+                <div class="compromiso-card">
+                    <div class="compromiso-icon">👥</div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Cada cliente es único. Nos adaptamos a tus necesidades específicas y trabajamos mano a mano
+                        contigo para alcanzar tus objetivos.</p>
+                </div>
+                <div class="compromiso-card">
+                    <div class="compromiso-icon">🎯</div>
+                    <h3>Resultados Medibles</h3>
+                    <p>Nos enfocamos en proporcionar resultados tangibles y medibles. Tu éxito es nuestro éxito.</p>
+                </div>
+                <div class="compromiso-card">
+                    <div class="compromiso-icon">⚡</div>
+                    <h3>Innovación Constante</h3>
+                    <p>Utilizamos las últimas herramientas y metodologías para garantizar soluciones innovadoras y
+                        efectivas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipo-preview">
+            <div class="equipo-preview-img" style="background-color: #4CAF50;">
+                <!-- Fondo de color en lugar de imagen -->
+            </div>
+            <div class="equipo-preview-content">
+                <h2>Conoce a Nuestro Equipo</h2>
+                <p>En Gomar, contamos con un equipo multidisciplinario de expertos en investigación de mercados,
+                    análisis de datos y consultoría estratégica. Nuestra experiencia combinada nos permite ofrecer
+                    soluciones integrales y personalizadas para cada cliente.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <a href="pages/nosotros.html" class="equipo-preview-btn">Conoce más sobre nosotros</a>
+            </div>
+        </section>
+
+        <section id="nuestro-trabajo">
+            <h2>Nuestro Trabajo</h2>
+            <div class="trabajo-grid">
+                <div class="trabajo-item">
+                    <img data-src="assets/images/image1.jpg" alt="Análisis de datos" class="lazy-image">
+                    <div class="trabajo-titulo">Análisis Predictivo</div>
+                </div>
+                <div class="trabajo-item">
+                    <img data-src="assets/images/image2.jpg" alt="Reunión de equipo" class="lazy-image">
+                    <div class="trabajo-titulo">Consultoría Empresarial</div>
+                </div>
+                <div class="trabajo-item">
+                    <img data-src="assets/images/image3.jpg" alt="Investigación de mercado" class="lazy-image">
+                    <div class="trabajo-titulo">Investigación de Mercados</div>
+                </div>
+                <div class="trabajo-item">
+                    <img data-src="assets/images/image4.jpg" alt="Estrategia digital" width="400" height="300"
+                        class="lazy-image">
+                    <div class="trabajo-titulo">Estrategia Digital</div>
+                </div>
+                <div class="trabajo-item">
+                    <img data-src="assets/images/image5.jpg" alt="Análisis competitivo" width="400" height="300"
+                        class="lazy-image">
+                    <div class="trabajo-titulo">Análisis Competitivo</div>
+                </div>
+                <div class="trabajo-item">
+                    <img data-src="assets/images/image6.jpg" alt="Proyecciones financieras" width="400" height="300"
+                        class="lazy-image">
+                    <div class="trabajo-titulo">Proyecciones Financieras</div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes-preview">
+            <h2 style="color: #440505;">Empresas que Confían en Nosotros</h2>
+            <div class="texto-clientes">
+                <p>Este módulo exhibe un portafolio selecto de nuestros clientes con entidades líderes en sus
+                    respectivos sectores, reflejando nuestra capacidad para atender demandas de alta exigencia y
+                    diversidad industrial. Las asociaciones aquí presentadas validan nuestra excelencia operativa y
+                    adaptabilidad a mercados globales.</p>
+                <hr>
+            </div>
+            <div class="cta-clientes">
+                <a style="background: linear-gradient(135deg, #221e1e 0%, #621919 100%)!important;" href="pages/clientes.html" class="btn btn-lg">Conoce Nuestros Clientes</a>
+            </div>
+        </section>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Tu éxito es nuestra prioridad</h1>
+                <p class="hero-description">En Gomar, transformamos datos en decisiones estratégicas. Ayudamos a las
+                    empresas a alcanzar su máximo potencial a través de análisis de mercado precisos y estrategias
+                    basadas en datos.</p>
+                <a href="pages/contacto.html" class="btn btn-lg">Comienza tu proyecto</a>
+            </div>
+            <div class="hero-image" style="background-color: #2196F3;">
+                <!-- Fondo azul en lugar de imagen -->
+            </div>
+        </section>
+    </main>
+
+    <footer><!--Código generado en components.js--></footer>
+</body>
+
+</html>
