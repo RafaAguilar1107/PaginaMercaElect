@@ -226,14 +226,6 @@ main {
   padding: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    margin: 0rem;
-    padding: 0rem;
-  }
-  
-}
-
 section {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
@@ -1365,5 +1357,25 @@ nav.scrolled {
     .texto-clientes p {
       font-size: 1.1rem;
     }
+  }
+
+  /* Animación del botón hamburguesa */
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* Ajustes adicionales para submenús en móvil */
+  .has-submenu > a::after {
+    content: '▼';
+    margin-left: 5px;
+    font-size: 12px;
   }
 }

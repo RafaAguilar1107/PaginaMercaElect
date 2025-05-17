@@ -35,3 +35,24 @@ const criticalImages = [
 
 // Precargar imágenes críticas
 preloadImages(criticalImages);
+
+// Manejo del menú móvil
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.open-menu-btn');
+    const navMenu = document.getElementById('full-menu');
+    const closeMenu = document.getElementById('close-full-menu');
+
+    // Toggle del menú hamburguesa
+    hamburger.addEventListener('click', function() {
+        navMenu.style.display ='block';
+        navMenu.classList.add('active');
+        hamburger.classList.remove('hidden');
+    });
+
+    // Cerrar menú al hacer click en un enlace
+    closeMenu.addEventListener('click', function() {
+        navMenu.style.display = 'none';
+        hamburger.classList.add('active');
+        hamburger.classList.remove('hidden');
+    });
+});
