@@ -42,7 +42,195 @@
     <header></header>
     
     <main>
-        <!-- Contenido específico de la página -->
+    <div class="market-research-service">
+  <!-- Hero con visualización de datos -->
+  <section class="insights-hero">
+    <div class="hero-content">
+      <h1>Inteligencia de Mercado que Transforma Decisiones</h1>
+      <p class="hero-subtitle">Metodologías científicas que analizan <span class="data-point">450+ variables</span> para revelar oportunidades ocultas en tu sector</p>
+      
+      <div class="research-badges">
+        <div class="badge">
+          <div class="badge-icon">📊</div>
+          <div class="badge-text">Muestras estadísticamente representativas</div>
+        </div>
+        <div class="badge">
+          <div class="badge-icon">🔍</div>
+          <div class="badge-text">Triangulación metodológica</div>
+        </div>
+      </div>
+      
+      <button class="research-cta">Solicitar diagnóstico gratuito</button>
+    </div>
+    <div class="hero-visual">
+      <div class="data-points">
+        <div class="point" style="--x: 20%; --y: 30%; --size: 8px; --delay: 0s"></div>
+        <div class="point" style="--x: 70%; --y: 15%; --size: 12px; --delay: 0.2s"></div>
+        <div class="point" style="--x: 40%; --y: 60%; --size: 6px; --delay: 0.4s"></div>
+        <div class="point" style="--x: 85%; --y: 75%; --size: 10px; --delay: 0.6s"></div>
+        <div class="trend-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metodologías integradas -->
+  <section class="research-methods">
+    <h2 class="section-title">Pirámide de Inteligencia de Mercado</h2>
+    <div class="methods-pyramid">
+      <div class="pyramid-layer">
+        <div class="layer-header">
+          <h3>Datos Primarios</h3>
+          <div class="layer-percent">35% del valor</div>
+        </div>
+        <ul>
+          <li>Encuestas probabilísticas (n ≥ 1,200)</li>
+          <li>Entrevistas en profundidad (IDIs)</li>
+          <li>Grupos focales moderados</li>
+        </ul>
+      </div>
+      
+      <div class="pyramid-layer">
+        <div class="layer-header">
+          <h3>Datos Secundarios</h3>
+          <div class="layer-percent">25% del valor</div>
+        </div>
+        <ul>
+          <li>Análisis de bases de consumo (Kantar, Nielsen)</li>
+          <li>Benchmarking competitivo</li>
+          <li>Datos de transacciones</li>
+        </ul>
+      </div>
+      
+      <div class="pyramid-layer">
+        <div class="layer-header">
+          <h3>Analítica Avanzada</h3>
+          <div class="layer-percent">40% del valor</div>
+        </div>
+        <ul>
+          <li>Modelos predictivos (Random Forest)</li>
+          <li>Clustering jerárquico</li>
+          <li>Análisis de correspondencia</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Segmentación dinámica -->
+  <section class="segmentation-showcase">
+    <h2>Segmentación Accionable</h2>
+    <div class="segmentation-tool">
+      <div class="tool-controls">
+        <div class="control-group">
+          <label>Variable principal:</label>
+          <select id="mainVariable">
+            <option value="comportamiento">Comportamiento de compra</option>
+            <option value="psicografico">Perfil psicográfico</option>
+            <option value="valor">Valor de por vida</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label>Nivel de detalle:</label>
+          <input type="range" min="3" max="8" value="5" id="clusterDetail">
+          <span id="clusterValue">5 segmentos</span>
+        </div>
+      </div>
+      
+      <div class="segmentation-visual">
+        <div class="cluster" style="--size: 22%; --color: #3B82F6">
+          <div class="cluster-label">Exploradores (22%)</div>
+        </div>
+        <div class="cluster" style="--size: 18%; --color: #10B981">
+          <div class="cluster-label">Tradicionales (18%)</div>
+        </div>
+        <div class="cluster" style="--size: 15%; --color: #F59E0B">
+          <div class="cluster-label">Premium (15%)</div>
+        </div>
+        <div class="cluster" style="--size: 25%; --color: #6366F1">
+          <div class="cluster-label">Ocasionales (25%)</div>
+        </div>
+        <div class="cluster" style="--size: 20%; --color: #EC4899">
+          <div class="cluster-label">Sensibles (20%)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Casos con ROI demostrable -->
+  <section class="roi-cases">
+    <h2>Impacto Medible en Negocios</h2>
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="case-icon">📈</div>
+        <h3>Lanzamiento de Producto</h3>
+        <div class="case-metrics">
+          <div class="metric">
+            <div class="value">+37%</div>
+            <div class="label">Adopción inicial</div>
+          </div>
+          <div class="metric">
+            <div class="value">6.2x</div>
+            <div class="label">ROI campaña</div>
+          </div>
+        </div>
+        <p>Pre-testing de concepto identificó el claim más efectivo</p>
+      </div>
+      
+      <div class="case-card">
+        <div class="case-icon">🎯</div>
+        <h3>Reposicionamiento</h3>
+        <div class="case-metrics">
+          <div class="metric">
+            <div class="value">+14pts</div>
+            <div class="label">Top of Mind</div>
+          </div>
+          <div class="metric">
+            <div class="value">29%</div>
+            <div class="label">Reducción CAC</div>
+          </div>
+        </div>
+        <p>Análisis de brecha perceptual reveló atributos subutilizados</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA con diagnóstico interactivo -->
+  <section class="diagnostic-tool">
+    <div class="diagnostic-container">
+      <h3>Identifica tus Oportunidades Ocultas</h3>
+      <p>Responde 3 preguntas clave para recibir un diagnóstico preliminar</p>
+      
+      <div class="diagnostic-questions">
+        <div class="question active">
+          <p>¿Qué porcentaje de tus decisiones estratégicas se basan actualmente en datos formales de mercado?</p>
+          <div class="options">
+            <button class="option-btn">Menos del 30%</button>
+            <button class="option-btn">30-60%</button>
+            <button class="option-btn">Más del 60%</button>
+          </div>
+        </div>
+        
+        <div class="question">
+          <p>¿Con qué frecuencia monitoreas cambios en el comportamiento de tus consumidores?</p>
+          <div class="options">
+            <button class="option-btn">Anualmente</button>
+            <button class="option-btn">Trimestralmente</button>
+            <button class="option-btn">En tiempo real</button>
+          </div>
+        </div>
+        
+        <div class="diagnostic-result">
+          <h4>Tu Potencial de Mejora:</h4>
+          <div class="improvement-bar">
+            <div class="bar-fill" style="width: 65%"></div>
+          </div>
+          <p>Nuestros clientes similares aumentaron su precisión estratégica en 58% con estudios continuos</p>
+          <button class="diagnostic-cta">Descubre cómo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+    <!-- Contenido específico de la página -->
     </main>
 
     <footer></footer>
